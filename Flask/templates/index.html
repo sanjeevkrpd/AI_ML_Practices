@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marks</title>
+</head>
+<body>
+    <h3>Enter your marks</h3>
+    <hr>
+
+    <!-- Use <form> so Flask can receive the data -->
+    <form method="POST" action="/submit">
+        <div>
+            <p>Maths</p>
+            <input name="maths" type="number" required />
+        </div>
+        <div>
+            <p>Science</p>
+            <input name="science" type="number" required />
+        </div>
+        <div>
+            <p>S.st</p>
+            <input name="sst" type="number" required />
+        </div>
+        <div>
+            <p>English</p>
+            <input name="english" type="number" required />
+        </div>
+        <div>
+            <p>Hindi</p>
+            <input name="hindi" type="number" required />
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
